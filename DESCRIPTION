@@ -1,5 +1,5 @@
-Package: data.cleaner
-Title: Data Cleaner (NA Value Removal)
+Package: clean.plot
+Title: Clean Plot
 Version: 0.0.0.9000
 Authors@R: 
     person("Brooke", "Parker", , "brooke.parker@selu.edu", role = c("aut", "cre"),

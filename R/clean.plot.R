@@ -25,5 +25,9 @@ create_plot <- function(filepath, savefile){
   my_plot <- data_raw %>%
     ggplot(data = data_raw, mapping = aes(x = 1, y = 1)) + geom_point()
   ggsave(savefile, width = 20, height = 14, units = "cm", dpi = 300)
-  return(my_plot)
+  if (!isTRUE(all(x == floor(x)))){
+    return(my_plot)
+  } else {
+    print ("Error: Values must be integers!")
+  }
 }

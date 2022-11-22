@@ -10,12 +10,12 @@ date: "2022-11-15"
 
 
 
-# clean.plot
+# data.cleaner
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of clean.plot is to ...
+The goal of data.cleaner is to ...
 
 ## Installation
 

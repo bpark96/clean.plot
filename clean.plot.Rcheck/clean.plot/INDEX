@@ -1,0 +1,4 @@
+data_cleaning           This function cleans all of the NA values from
+                        a data set, as well as creates a scatter plot
+                        using designated x and y values and saves the
+                        plot to a file.

@@ -1,0 +1,31 @@
+---
+title: "Package Tutorial"
+author: "Brooke Parker"
+output: html_document
+date: "2022-11-15"
+---
+
+# Introduction to My R Package
+### Smalltext
+
+This **R package** does *two* things.
+
+Leave one line of space to start a new paragraph.
+
+
+```{r}
+
+```
+
+## Installation Instructions
+
+```{r eval=FALSE, include=TRUE}
+install.packages("phytools")
+# Use hashtag to include notes without R trying to run it.
+```
+
+text text text
+
+![Caption](path/to/image)
+
+Include [hyperlinks](website.com) if you want.

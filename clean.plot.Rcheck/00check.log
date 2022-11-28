@@ -20,9 +20,7 @@
 * checking package directory ... OK
 * checking for future file timestamps ... OK
 * checking DESCRIPTION meta-information ... OK
-* checking top-level files ... NOTE
-Non-standard file/directory found at top level:
-  ‘docs’
+* checking top-level files ... OK
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK
@@ -34,25 +32,21 @@ Non-standard file/directory found at top level:
 * checking whether the namespace can be loaded with stated dependencies ... OK
 * checking whether the namespace can be unloaded cleanly ... OK
 * checking loading without being on the library search path ... OK
-* checking dependencies in R code ... NOTE
-Namespace in Imports field not imported from: ‘tidyverse’
-  All declared Imports should be used.
+* checking dependencies in R code ... WARNING
+Missing or unexported objects:
+  ‘tidyverse::drop_na’ ‘tidyverse::read_csv’
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
 * checking R code for possible problems ... NOTE
-create_plot: no visible global function definition for ‘read_csv’
 create_plot: no visible global function definition for ‘%>%’
-create_plot: no visible global function definition for ‘ggplot’
 create_plot: no visible global function definition for ‘aes’
 create_plot: no visible global function definition for ‘geom_point’
-create_plot: no visible global function definition for ‘ggsave’
 create_plot: no visible binding for global variable ‘x’
 data_cleaning: no visible global function definition for ‘%>%’
-data_cleaning: no visible global function definition for ‘drop_na’
 data_cleaning: no visible binding for global variable ‘d_c’
 Undefined global functions or variables:
-  %>% aes d_c drop_na geom_point ggplot ggsave read_csv x
+  %>% aes d_c geom_point x
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
@@ -60,8 +54,11 @@ Undefined global functions or variables:
 * checking for missing documentation entries ... OK
 * checking for code/documentation mismatches ... OK
 * checking Rd \usage sections ... WARNING
+Documented arguments not in \usage in documentation object 'create_plot':
+  ‘x’ ‘y’
+
 Documented arguments not in \usage in documentation object 'data_cleaning':
-  ‘savefile’ ‘x’ ‘y’
+  ‘savefile’
 
 Functions with \usage entries need to have the appropriate \alias
 entries, and all their arguments documented.
@@ -74,24 +71,8 @@ Extensions’ manual.
 Files in the 'vignettes' directory but no files in 'inst/doc':
   ‘PackageTutorial.Rmd’
 Package has no Sweave vignette sources and no VignetteBuilder field.
-* checking examples ... ERROR
-Running examples in ‘clean.plot-Ex.R’ failed
-The error most likely occurred in:
-
-> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
-> ### Name: data_cleaning
-> ### Title: This function cleans all of the NA values from a data set, as
-> ###   well as creates a scatter plot using designated x and y values and
-> ###   saves the plot to a file.
-> ### Aliases: data_cleaning
-> 
-> ### ** Examples
-> 
-> data_cleaning(dataset_name)
-Error in data_cleaning(dataset_name) : 
-  could not find function "data_cleaning"
-Execution halted
+* checking examples ... NONE
 * checking for non-standard things in the check directory ... OK
 * checking for detritus in the temp directory ... OK
 * DONE
-Status: 1 ERROR, 2 WARNINGs, 3 NOTEs
+Status: 3 WARNINGs, 1 NOTE

@@ -6,3 +6,6 @@
 data.cleaner.Rcheck/
 data.cleaner*.tar.gz
 data.cleaner*.tgz
+clean.plot.Rcheck/
+clean.plot*.tar.gz
+clean.plot*.tgz

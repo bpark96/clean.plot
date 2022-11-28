@@ -4,10 +4,10 @@
 \alias{create_plot}
 \title{This function creates a scatter plot using designated x and y values and saves the plot to a file.}
 \usage{
-create_plot(filepath, savefile)
+create_plot(dataset, savefile, x, y)
 }
 \arguments{
-\item{filepath}{the name of a dataset that has been loaded into the
+\item{dataset}{the name of a dataset that has been loaded into the
 environment or its corresponding file path}
 
 \item{savefile}{the name that your plot file will be saved as}

@@ -20,7 +20,9 @@
 * checking package directory ... OK
 * checking for future file timestamps ... OK
 * checking DESCRIPTION meta-information ... OK
-* checking top-level files ... OK
+* checking top-level files ... NOTE
+Non-standard files/directories found at top level:
+  ‘ParkerFeedback’ ‘surveys_complete.csv’ ‘surveysplot.png’
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK
@@ -33,20 +35,19 @@
 * checking whether the namespace can be unloaded cleanly ... OK
 * checking loading without being on the library search path ... OK
 * checking dependencies in R code ... WARNING
-Missing or unexported objects:
-  ‘tidyverse::drop_na’ ‘tidyverse::read_csv’
+'::' or ':::' import not declared from: ‘tidyr’
+Namespaces in Imports field not imported from:
+  ‘devtools’ ‘tidyverse’
+  All declared Imports should be used.
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
 * checking R code for possible problems ... NOTE
-create_plot: no visible global function definition for ‘%>%’
 create_plot: no visible global function definition for ‘aes’
 create_plot: no visible global function definition for ‘geom_point’
-create_plot: no visible binding for global variable ‘x’
 data_cleaning: no visible global function definition for ‘%>%’
-data_cleaning: no visible binding for global variable ‘d_c’
 Undefined global functions or variables:
-  %>% aes d_c geom_point x
+  %>% aes geom_point
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
@@ -54,9 +55,6 @@ Undefined global functions or variables:
 * checking for missing documentation entries ... OK
 * checking for code/documentation mismatches ... OK
 * checking Rd \usage sections ... WARNING
-Documented arguments not in \usage in documentation object 'create_plot':
-  ‘x’ ‘y’
-
 Documented arguments not in \usage in documentation object 'data_cleaning':
   ‘savefile’
 
@@ -75,4 +73,4 @@ Package has no Sweave vignette sources and no VignetteBuilder field.
 * checking for non-standard things in the check directory ... OK
 * checking for detritus in the temp directory ... OK
 * DONE
-Status: 3 WARNINGs, 1 NOTE
+Status: 3 WARNINGs, 2 NOTEs

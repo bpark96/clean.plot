@@ -8,8 +8,8 @@
 #' 
 data_cleaning <- function(filepath){
   data_clean <- filepath %>%
-    tidyverse::drop_na()
-  if(sum(!is.na(d_c)) == 0){
+    tidyr::drop_na()
+  if(sum(is.na(data_clean)) == 0){
     return(data_clean)
   } else {
     print ("NAs still present!!")

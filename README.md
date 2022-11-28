@@ -1,5 +1,5 @@
 ---
-title: "readme"
+title: "Installation Tutorial (clean.plot)"
 author: "Brooke Parker"
 output: html_document
 date: "2022-11-15"

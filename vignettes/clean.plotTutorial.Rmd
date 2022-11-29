@@ -19,7 +19,7 @@ date: "2022-11-15"
 
 The R package *clean.plot* enables the user to easily remove all NA values from a set of data, as well as create a scatter plot that will save itself automatically as a .png file under a file name designated by the user. This is especially useful in the case of large data files that contain many NA values. NA value removal pairs well with the included plot function, allowing the user to make a clean, informative scatter plot with ease and have it save to your desired destination with no extra lines of code needed.
 
-##Dependencies
+## Dependencies
 
 ```r
 tidyverse

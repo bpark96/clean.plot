@@ -30,7 +30,7 @@ ggplot2
 
 ## Installation
 
-As shown in under Dependencies, several packages are required in order for *clean.plot* to work as intended. You can install these packages as well as the development version of *clean.plot* like so:
+As shown under Dependencies, several packages are required in order for *clean.plot* to work as intended. You can install these packages as well as the development version of *clean.plot* like so:
 
 ``` r
 install.packages("tidyverse")

@@ -22,7 +22,7 @@
 * checking DESCRIPTION meta-information ... OK
 * checking top-level files ... NOTE
 Non-standard files/directories found at top level:
-  ‘ParkerFeedback’ ‘surveys_complete.csv’ ‘surveysplot.png’
+  ‘ParkerFeedback’ ‘docs’ ‘surveys_complete.csv’
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK

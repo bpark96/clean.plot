@@ -6,7 +6,7 @@
 #' @param x = x value
 #' @param y = y value
 #' 
-#' @return If non-integer values are entered for x value, console will print "Error: Values must be integers!"
+#' @return If a non-integer is entered for x value, console will print "Error: Value x must be an integer!"
 #' 
 create_plot <- function(dataset, savefile, x, y){
   my_plot <- ggplot2::ggplot(data = dataset, mapping = aes(x = {{x}}, y = {{y}})) + geom_point()
@@ -14,6 +14,6 @@ create_plot <- function(dataset, savefile, x, y){
   if (!isTRUE(dataset$x)){
     return(my_plot)
   } else {
-    print ("Error: Values must be integers!")
+    print ("Error: Value x must be an integer!")
   }
 }

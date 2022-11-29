@@ -1,5 +1,5 @@
 ---
-title: "readme"
+title: "Installation Tutorial (clean.plot)"
 author: "Brooke Parker"
 output: html_document
 date: "2022-11-15"
@@ -15,11 +15,13 @@ date: "2022-11-15"
 <!-- badges: start -->
 <!-- badges: end -->
 
-The R package clean.plot enables the user to easily remove all NA values from a set of data, as well as create a scatter plot that will save itself automatically under a file name and destination designated by the user.
+## Usage
+
+The R package *clean.plot* enables the user to easily remove all NA values from a set of data, as well as create a scatter plot that will save itself automatically as a .png file under a file name designated by the user. This is especially useful in the case of large data files that contain many NA values. NA value removal pairs well with the included plot function, allowing the user to make a clean, informative scatter plot with ease and have it save to your desired destination with no extra lines of code needed.
 
 ## Installation
 
-You can install the development version of clean.plot like so:
+Several packages are required in order for *clean.plot* to work as intended. You can install these packages as well as the development version of *clean.plot* like so:
 
 ``` r
 install.packages("tidyverse")
@@ -34,10 +36,17 @@ library(clean.plot)
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+These are basic examples for each of the two functions. Just substitute your own values.
 
 ``` r
 library(clean.plot)
-data_cleaning(dataset)
+# Make sure to input this before utilizing any of the functions. This will load the package containing the functions into the library, so it is ready to use.
+
+data_cleaning(surveys)
+# Designate the dataset you wish to remove NA values from. It should be loaded into the environment panel ahead of time.
+
+create_plot(surveys, "surveysplot.png", x = year, y = hindfoot_length)
+# Again, be sure to have your desired dataset loaded into the environment panel. The plot will be saved as a .png to the current destination, and can be named whatever you would like so long as the quotations and .png is used. X and Y values should be contained within your chosen dataset, and X must be a numerical value (otherwise, an error message will result).
 ```
+
 

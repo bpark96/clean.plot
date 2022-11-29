@@ -17,7 +17,7 @@ environment or its corresponding file path}
 \item{y}{= y value}
 }
 \value{
-If non-integer values are entered for the plot function, console will print "Error: Values must be integers!"
+If a non-integer is entered for x value, console will print "Error: Value x must be an integer!"
 }
 \description{
 This function creates a scatter plot using designated x and y values and saves the plot to a file.
